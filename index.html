@@ -41,6 +41,7 @@
     
     .slick-active {
       opacity: .5;
+      color: #ff0000;
     }
 
     .slick-current {
@@ -52,29 +53,30 @@
 
 <a id=staff1></a>
 <section class="vertical-center slider">
-    <a href='#staff2'><div><img src="img/opus-00.png"></div></a>
-    <a href='#staff2'><div><img src="img/opus-01.png"></div></a>
-    <a href='#staff2'><div><img src="img/opus-02.png"></div></a>
-    <a href='#staff2'><div><img src="img/opus-03.png"></div></a>
-    <a href='#staff2'><div><img src="img/opus-04.png"></div></a>
-    <a href='#staff2'><div><img src="img/opus-05.png"></div></a>
-    <a href='#staff2'><div><img src="img/opus-06.png"></div></a>
-    <a href='#staff2'><div><img src="img/opus-07.png"></div></a>
-    <a href='#staff2'><div><img src="img/opus-08.png"></div></a>
+    <div><img src="img/opus-00.png"></div>
+    <div><img src="img/opus-01.png"></div>
+    <div><img src="img/opus-02.png"></div>
+    <div><img src="img/opus-03.png"></div>
+    <div><img src="img/opus-04.png"></div>
+    <div><img src="img/opus-05.png"></div>
+    <div><img src="img/opus-06.png"></div>
+    <div><img src="img/opus-07.png"></div>
+    <div><img src="img/opus-08.png"></div>
+
 </section>
 
 <a id=staff2></a>
 <section class="vertical-center slider">
-    <a href='#staff3'><div><img src="img/opus-09.png"></div></a>
-    <a href='#staff3'><div><img src="img/opus-10.png"></div></a>
-    <a href='#staff3'><div><img src="img/opus-11.png"></div></a>
-    <a href='#staff3'><div><img src="img/opus-12.png"></div></a>
-    <a href='#staff3'><div><img src="img/opus-13.png"></div></a>
-    <a href='#staff3'><div><img src="img/opus-14.png"></div></a>
-    <a href='#staff3'><div><img src="img/opus-15.png"></div></a>
-    <a href='#staff3'><div><img src="img/opus-16.png"></div></a>
-    <a href='#staff3'><div><img src="img/opus-17.png"></div></a>
-    <a href='#staff3'><div><img src="img/opus-18.png"></div></a>
+    <div><img src="img/opus-09.png"></div>
+    <div><img src="img/opus-10.png"></div>
+    <div><img src="img/opus-11.png"></div>
+    <div><img src="img/opus-12.png"></div>
+    <div><img src="img/opus-13.png"></div>
+    <div><img src="img/opus-14.png"></div>
+    <div><img src="img/opus-15.png"></div>
+    <div><img src="img/opus-16.png"></div>
+    <div><img src="img/opus-17.png"></div>
+    <div><img src="img/opus-18.png"></div>
 </section>
 
 <a id=staff3></a>
@@ -91,6 +93,15 @@
 </section>
 
 
+<a id=staff4></a>
+<section class="vertical-center slider">
+    <div><img src="img/opus-28.png"></div>
+    <div><img src="img/opus-29.png"></div>
+    <div><img src="img/opus-30.png"></div>
+    <div><img src="img/opus-31.png"></div>
+    <div><img src="img/opus-32.png"></div>
+</section>
+
 
   <script src="https://code.jquery.com/jquery-2.2.0.min.js" type="text/javascript"></script>
   <script src="./slick/slick.js" type="text/javascript" charset="utf-8"></script>
@@ -98,14 +109,17 @@
     $(document).on('ready', function() {
 
       $(".vertical-center").slick({
+        adaptiveHeight: true,
         arrows: true,
-        autoplay: false,
+        autoplay: true,
         centerMode: false,
         dots: true,
         vertical: true,
         pauseOnFocus: true,
         pauseOnDotsHover: true,
-        pauseOnHover: true
+        pauseOnHover: true,
+        pauseOnFocus: true,
+        swipeToSlide: true,
       });
 
     });
